@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Insurance Management System</h1>
+    </header>
+
+    <main>
+        <section id="quote-form">
+            <h2>Get a Quote</h2>
+            <form action="/quote" method="post">
+                <label for="insuranceType">Insurance Type:</label>
+                <select id="insuranceType" name="insuranceType" required>
+                    <option value="auto">Auto Insurance</option>
+                    <option value="home">Home Insurance</option>
+                    <option value="health">Health Insurance</option>
+                </select>
+
+                <label for="coverage">Coverage Amount:</label>
+                <input type="text" id="coverage" name="coverage" required>
+
+                <button type="submit">Get Quote</button>
+            </form>
+        </section>
+
+        <section id="policy-list">
+            <h2>Your Policies</h2>
+            <ul>
+                <!-- Policy details will be displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Insurance Management System</p>
+    </footer>
+</body>
+
+</html>
